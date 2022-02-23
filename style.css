@@ -1,0 +1,53 @@
+body{
+    background: hsla(95, 76%, 65%, 1);
+
+    background: linear-gradient(90deg, hsla(95, 76%, 65%, 1) 30%, hsla(61, 81%, 60%, 1) 69%);
+
+    background: -moz-linear-gradient(90deg, hsla(95, 76%, 65%, 1) 30%, hsla(61, 81%, 60%, 1) 69%);
+
+    background: -webkit-linear-gradient(90deg, hsla(95, 76%, 65%, 1) 30%, hsla(61, 81%, 60%, 1) 69%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BEA62", endColorstr="#E9EC45", GradientType=1 );
+}
+
+h1{
+    color:crimson;
+    background-color:cornflowerblue;
+}
+
+#show_sketch{
+    float:right;
+}
+
+canvas{
+    border:5px dashed #f09235;
+    border-radius: 25px;
+    animation-name: glow;
+    animation-duration: 4s;
+    margin-top:50px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow{
+    from{box-shadow:  10px 5px 5px #9b68f2;}
+    to{box-shadow:  10px 5px 5px #8ce6c2}
+}
+
+p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+ 
+
+#score{
+    float:left;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#time{
+    float: right;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
